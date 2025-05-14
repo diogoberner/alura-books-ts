@@ -1,0 +1,25 @@
+::root {
+  --white: #fff;
+  --blue-gradient: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  --yellow: #eb9b00;
+  --blue-dark: #002f52;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
