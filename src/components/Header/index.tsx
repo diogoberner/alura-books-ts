@@ -1,10 +1,13 @@
+import AppLink from "../AppLink";
 import Logo from "./Logo";
 
 const Header = () => {
   return (
     <header>
-      <Logo src="/logo.svg" alt="logo da AluraBooks" />
-      <Logo src="/alura-books-logo.svg" alt="logo da AluraBooks" />
+      <AppLink to="/">
+        <Logo src="/logo.svg" alt="logo da AluraBooks" />
+        <Logo src="/alura-books-logo.svg" alt="logo da AluraBooks" />
+      </AppLink>
     </header>
   );
 };
