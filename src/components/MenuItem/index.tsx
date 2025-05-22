@@ -9,7 +9,7 @@ const MenuItem = ({ children, to, ...props }: MenuItemProps) => {
   return (
     <Link to={to}>
       <li
-        className="relative px-2 py-3 hover:bg-gradient-to-br from-dark-blue to-light-blue hover:text-white"
+        className="relative px-1 py-2 md:px-2 md:py-3 hover:bg-gradient-to-br from-dark-blue to-light-blue hover:text-white"
         {...props}
       >
         {children}

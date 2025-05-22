@@ -1,3 +1,5 @@
+import DropDownItem from "./DropDownItem";
+
 type DropDownMenuProps = {
   open: boolean;
 } & React.HTMLAttributes<HTMLUListElement>;
@@ -5,25 +7,15 @@ type DropDownMenuProps = {
 const DropDownMenu = ({ open }: DropDownMenuProps) => {
   return (
     <ul
-      className={`z-10 absolute text-black left-0 mt-3 w-[180px] ${
+      className={`z-30 absolute text-dark-blue left-0 sm:mt-3 w-[300px] sm:w-[180px] ${
         open ? "block" : "hidden"
       }`}
     >
-      <li className="w-full py-4 px-6 bg-white hover:bg-gradient-to-br from-dark-blue to-light-blue hover:text-white">
-        Programação
-      </li>
-      <li className="w-full py-4 px-6 bg-white hover:bg-gradient-to-br from-dark-blue to-light-blue hover:text-white">
-        Front-End
-      </li>
-      <li className="w-full py-4 px-6 bg-white hover:bg-gradient-to-br from-dark-blue to-light-blue hover:text-white">
-        Infraestrutura
-      </li>
-      <li className="w-full py-4 px-6 bg-white hover:bg-gradient-to-br from-dark-blue to-light-blue hover:text-white">
-        Business
-      </li>
-      <li className="w-full py-4 px-6 bg-white hover:bg-gradient-to-br from-dark-blue to-light-blue hover:text-white">
-        Design & UX
-      </li>
+      <DropDownItem>Programação</DropDownItem>
+      <DropDownItem>Front-End</DropDownItem>
+      <DropDownItem>Infraestrutura</DropDownItem>
+      <DropDownItem>Business</DropDownItem>
+      <DropDownItem>Design & UX</DropDownItem>
     </ul>
   );
 };
