@@ -8,7 +8,12 @@ type MenuItemProps = {
 const MenuItem = ({ children, to, ...props }: MenuItemProps) => {
   return (
     <Link to={to}>
-      <li {...props}>{children}</li>
+      <li
+        className="relative px-2 py-3 hover:bg-gradient-to-br from-dark-blue to-light-blue hover:text-white"
+        {...props}
+      >
+        {children}
+      </li>
     </Link>
   );
 };
