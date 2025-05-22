@@ -4,6 +4,7 @@ import MenuList from "../MenuList";
 import { MdOutlineMenu, MdOutlineShoppingBag } from "react-icons/md";
 import { FaRegHeart, FaRegUserCircle } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
@@ -12,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex gap-3 items-center w-full h-20 pr-8">
+    <header className="flex gap-3 items-center w-full h-20 pr-8 sm:px-20">
       <button
         onClick={handleMenu}
         className={`${
@@ -25,12 +26,18 @@ const Header = () => {
       <MenuList>
         <MenuItem to="/">Programação</MenuItem>
         <MenuItem to="/">Favoritos</MenuItem>
-        <MenuItem to="/">Estante</MenuItem>
+        <MenuItem to="/">Minha Estante</MenuItem>
       </MenuList>
-      <div className="flex items-center justify-end gap-6 flex-1 text-dark-blue">
-        <FaRegHeart size={40} className="sm:hidden" />
-        <MdOutlineShoppingBag size={40} />
-        <FaRegUserCircle size={40} />
+      <div className="flex items-center gap-6 text-dark-blue sm:gap-15">
+        <Link to="/" className="sm:hidden">
+          <FaRegHeart size={40} />
+        </Link>
+        <Link to="/">
+          <MdOutlineShoppingBag size={40} />
+        </Link>
+        <Link to="/">
+          <FaRegUserCircle size={40} />
+        </Link>
       </div>
     </header>
   );

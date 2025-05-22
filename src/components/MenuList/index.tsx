@@ -1,7 +1,7 @@
 const MenuList = ({ children }: React.HTMLAttributes<HTMLUListElement>) => {
   return (
-    <nav className="hidden sm:flex">
-      <ul className="flex items-center justify-evenly">{children}</ul>
+    <nav className="hidden sm:flex items-center justify-evenly flex-1">
+      <ul className="flex uppercase gap-10">{children}</ul>
     </nav>
   );
 };
