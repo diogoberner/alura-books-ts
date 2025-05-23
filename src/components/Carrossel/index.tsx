@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import type { IBook } from "../../types";
+import BookCard from "../BookCard";
 
 interface CarrosselProps {
   books: IBook[];
@@ -79,19 +80,22 @@ const Carrossel = ({ books }: CarrosselProps) => {
 
   if (!displayedBooks) return;
   return (
-    <div
-      {...handlers}
-      className="flex h-[16rem] gap-5 items-center justify-center overflow-hidden"
-    >
-      {displayedBooks.map((book, index) => (
-        <img
-          key={`${book.id}-${index}`}
-          src={book.imgURL}
-          className="w-[40%] h-full"
-          onClick={() => handleClick(index)}
-        />
-      ))}
-    </div>
+    <>
+      <div
+        {...handlers}
+        className="flex h-[16rem] gap-5 items-center justify-center overflow-hidden mt-3 mb-12"
+      >
+        {displayedBooks.map((book, index) => (
+          <img
+            key={`${book.id}-${index}`}
+            src={book.imgURL}
+            className="w-[40%] h-full"
+            onClick={() => handleClick(index)}
+          />
+        ))}
+      </div>
+      <BookCard book={books[currentIndex]} />
+    </>
   );
 };
 
