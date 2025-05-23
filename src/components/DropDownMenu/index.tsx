@@ -13,6 +13,7 @@ const DropDownMenu = ({ open }: DropDownMenuProps) => {
     >
       <DropDownItem>Programação</DropDownItem>
       <DropDownItem>Front-End</DropDownItem>
+      <DropDownItem>Mobile</DropDownItem>
       <DropDownItem>Infraestrutura</DropDownItem>
       <DropDownItem>Business</DropDownItem>
       <DropDownItem>Design & UX</DropDownItem>

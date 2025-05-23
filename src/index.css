@@ -4,5 +4,7 @@
 @theme {
   --color-dark-blue: #002f52;
   --color-light-blue: #326589;
+  --color-orange-alura: #eb9b00;
+  --color-gray-bg: #ebecee;
   --font-display: "Poppins", sans-serif;
 }
