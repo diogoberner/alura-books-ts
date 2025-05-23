@@ -1,4 +1,4 @@
-import Carrossel from "./components/Carrossel";
+import BooksSection from "./components/BooksSection";
 import Header from "./components/Header";
 import HeroSearch from "./components/HeroSearch";
 
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <HeroSearch />
-      <Carrossel>ÚLTIMOS LANÇAMENTOS</Carrossel>
+      <BooksSection>ÚLTIMOS LANÇAMENTOS</BooksSection>
     </div>
   );
 }
