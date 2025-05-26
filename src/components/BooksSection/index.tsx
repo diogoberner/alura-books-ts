@@ -146,7 +146,7 @@ const BooksSection = ({ children }: BooksSectionProps) => {
       <div className="font-bold text-orange-alura text-lg h-15 bg-white flex justify-center items-center">
         <h2>{children}</h2>
       </div>
-      <div className="flex flex-col bg-gray-bg">
+      <div className="flex flex-col bg-gray-bg items-center">
         <Carrossel books={books} />
       </div>
     </section>
