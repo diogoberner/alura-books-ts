@@ -9,7 +9,7 @@ interface BookImageProps {
 const BookImage = ({ index, book, onClick }: BookImageProps) => {
   if (index === 0 || index === 2) {
     return (
-      <div className="w-[40%] aspect-[2/3] lg:shadow-md lg:w-[25%]">
+      <div className="w-[40%] aspect-[2/3] lg:shadow-md lg:w-[28%]">
         <img
           key={`${book.id}-${index}`}
           src={book.imgURL}

@@ -143,10 +143,10 @@ const books: IBook[] = [
 const BooksSection = ({ children }: BooksSectionProps) => {
   return (
     <section>
-      <div className="font-bold text-orange-alura text-lg h-15 bg-white flex justify-center items-center">
+      <div className="font-bold text-orange-alura text-lg h-15 bg-white flex justify-center items-center lg:text-[1.6rem] lg:h-[7rem]">
         <h2>{children}</h2>
       </div>
-      <div className="flex flex-col bg-gray-bg items-center">
+      <div className="flex flex-col bg-gray-bg items-center xl:flex-row xl:pl-45 xl:pr-72 xl:pt-11 xl:pb-16 xl:gap-12">
         <Carrossel books={books} />
       </div>
     </section>

@@ -78,7 +78,7 @@ const Carrossel = ({ books }: CarrosselProps) => {
     <>
       <div
         {...handlers}
-        className="flex gap-5 items-center justify-center w-[130%] overflow-hidden mt-3 mb-12 lg:gap-8 lg:w-[70%] lg:justify-between lg:mx-auto"
+        className="flex gap-5 items-center justify-center w-[130%] overflow-hidden mb-12 mt-3 lg:mt-8 lg:gap-8 lg:w-[70%] lg:justify-between lg:mx-auto xl:gap-6"
       >
         {displayedBooks.map((book, index) => (
           <BookImage
