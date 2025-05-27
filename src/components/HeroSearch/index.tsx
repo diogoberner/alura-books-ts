@@ -1,4 +1,5 @@
 import { FaSearch } from "react-icons/fa";
+import Input from "../Input";
 
 const HeroSearch = () => {
   return (
@@ -12,16 +13,9 @@ const HeroSearch = () => {
         <p className="mt-2 text-center">
           Encontre em nossa estante o que precisa para seu desenvolvimento!
         </p>
-        <label className="mt-4 w-full flex relative justify-center items-center">
-          <span className="absolute left-[11%] text-white pointer-events-none">
-            <FaSearch size={24} />
-          </span>
-          <input
-            type="text"
-            placeholder="Qual será sua próxima leitura?"
-            className="p-2 rounded-4xl border-1 border-white bg-transparent h-14 text-white placeholder:text-white text-center w-11/12 sm:w-11/12"
-          />
-        </label>
+        <Input type="text" placeholder="Qual será sua próxima leitura?">
+          <FaSearch size={24} />
+        </Input>
       </div>
     </section>
   );
