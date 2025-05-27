@@ -10,7 +10,7 @@ const HeroSearch = () => {
         <h1 className="text-lg sm:text-4xl font-bold text-center">
           Já sabe por onde começar?
         </h1>
-        <p className="mt-2 text-center">
+        <p className="mt-2 text-center mb-4">
           Encontre em nossa estante o que precisa para seu desenvolvimento!
         </p>
         <Input type="text" placeholder="Qual será sua próxima leitura?">

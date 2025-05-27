@@ -3,7 +3,7 @@ import clsx from "clsx";
 interface InputProps {
   type: string;
   placeholder: string;
-  children: React.ReactNode;
+  children: React.ReactNode; // ícone
   variant?: "primary" | "secondary";
 }
 
@@ -13,24 +13,27 @@ const Input = ({
   children,
   variant = "primary",
 }: InputProps) => {
-  const inputClasses = clsx(
-    "p-2 rounded-4xl border-1 bg-transparent h-14 text-center w-11/12 sm:w-11/12",
+  const wrapperClasses = clsx(
+    "w-full flex items-center gap-3 px-[10%] py-1 h-12 lg:h-14 lg:py-3 rounded-4xl border-1",
     {
       "border-white text-white placeholder:text-white": variant === "primary",
       "border-dark-blue text-dark-blue placeholder:text-dark-blue":
         variant === "secondary",
+      "lg:px-[25%]": type !== "email",
+    }
+  );
+
+  const inputClasses = clsx(
+    "bg-transparent w-full h-full focus:outline-none text-base ",
+    {
+      "text-white placeholder:text-white": variant === "primary",
+      "text-dark-blue placeholder:text-dark-blue": variant === "secondary",
     }
   );
 
   return (
-    <label className="mt-4 w-full flex relative justify-center items-center">
-      <span
-        className={clsx(
-          "absolute pointer-events-none",
-          "left-8 sm:left-6",
-          variant === "primary" ? "text-white" : "text-dark-blue"
-        )}
-      >
+    <label className={wrapperClasses}>
+      <span className="pointer-events-none flex justify-center items-center">
         {children}
       </span>
       <input type={type} placeholder={placeholder} className={inputClasses} />
