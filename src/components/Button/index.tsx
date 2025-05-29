@@ -3,7 +3,7 @@ import clsx from "clsx";
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant?: "primary" | "secondary";
-  size?: "regular" | "small";
+  size?: "regular" | "small" | "topic";
 }
 
 const Button = ({
@@ -19,6 +19,7 @@ const Button = ({
         variant === "secondary",
       "text-xl py-4 px-8": size === "regular",
       "text-xs py-1.5 px-3 sm:text-xl sm:py-4 sm:px-8": size === "small",
+      "text-sm py-4 px-6": size === "topic",
     }
   );
 

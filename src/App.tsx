@@ -5,6 +5,7 @@ import BannerSection from "./components/BannerSection";
 import Button from "./components/Button";
 import Input from "./components/Input";
 import { MdOutlineEmail } from "react-icons/md";
+import VisitedTopics from "./components/VisitedTopics";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <MdOutlineEmail size={24} />
         </Input>
       </BannerSection>
+      <VisitedTopics />
     </div>
   );
 }

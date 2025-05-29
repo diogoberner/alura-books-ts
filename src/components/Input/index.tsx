@@ -3,7 +3,7 @@ import clsx from "clsx";
 interface InputProps {
   type: string;
   placeholder: string;
-  children: React.ReactNode; // ícone
+  children: React.ReactNode;
   variant?: "primary" | "secondary";
 }
 
