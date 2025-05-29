@@ -24,7 +24,7 @@ const Input = ({
   );
 
   const inputClasses = clsx(
-    "bg-transparent w-full h-full focus:outline-none text-base ",
+    "bg-transparent min-w-full h-full focus:outline-none text-base ",
     {
       "text-white placeholder:text-white": variant === "primary",
       "text-dark-blue placeholder:text-dark-blue": variant === "secondary",

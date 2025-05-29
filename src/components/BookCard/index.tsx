@@ -17,7 +17,7 @@ const BookCard = ({ book }: BookCardProps) => {
         <h2 className="font-bold text-dark-blue text-lg mb-2 xl:mb-6">
           {book.title}
         </h2>
-        <p className="text-sm mb-2">{book.description}</p>
+        <p className="text-sm mb-2 h-10">{book.description}</p>
         <p className="text-sm mb-4 xl:mb-10">Por: {book.author}</p>
         <p className="flex gap-2 items-end lg:flex-col lg:items-start">
           <span className="opacity-50 xl:text-sm">A partir de: </span>
