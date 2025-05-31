@@ -6,6 +6,7 @@ import Button from "./components/Button";
 import Input from "./components/Input";
 import { MdOutlineEmail } from "react-icons/md";
 import VisitedTopics from "./components/VisitedTopics";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         </Button>
         <Button size="small">Fazer login</Button>
       </BannerSection>
+      <VisitedTopics />
       <BannerSection
         title="Fique por dentro das novidades!"
         paragraph="Atualizações de e-books, novos livros, promoções e outros."
@@ -36,7 +38,7 @@ function App() {
           <MdOutlineEmail size={24} />
         </Input>
       </BannerSection>
-      <VisitedTopics />
+      <Footer />
     </div>
   );
 }
