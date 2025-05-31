@@ -14,7 +14,8 @@ const Button = ({
   const buttonClasses = clsx(
     "font-bold border-orange-alura bg border-2 text-nowrap",
     {
-      "bg-orange-alura text-white hover:bg-dark-orange": variant === "primary",
+      "bg-orange-alura text-white hover:bg-dark-orange hover:border-dark-orange":
+        variant === "primary",
       "bg-transparent text-orange-alura hover:text-dark-orange hover:border-dark-orange":
         variant === "secondary",
       "text-xl py-4 px-8": size === "regular",

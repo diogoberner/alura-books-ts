@@ -14,10 +14,11 @@ const BannerSection = ({
   variant = "primary",
 }: BannerSectionProps) => {
   const sectionClasses = clsx(
-    "flex flex-col gap-5 items-start justify-center p-[10%] lg:flex-row lg:text-left lg:justify-between lg:items-center lg:py-30 lg:px-37.5 xl:px-[25%] xl:py-[5%]",
+    "flex flex-col gap-5 items-start justify-center p-[10%] lg:flex-row lg:text-left lg:justify-between lg:items-center",
     {
-      "bg-dark-blue text-white flex": variant === "primary",
-      "bg-white text-dark-blue": variant === "secondary",
+      "bg-dark-blue text-white flex lg:py-30 lg:px-37.5 xl:px-[25%] xl:py-[5%]":
+        variant === "primary",
+      "bg-white text-dark-blue pt-7 pb-13": variant === "secondary",
     }
   );
 

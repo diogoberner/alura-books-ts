@@ -11,3 +11,9 @@ export interface IBook {
   imgURL: string;
   alt: string;
 }
+
+export interface IFooterLinks {
+  title: string;
+  href: string;
+  icon: React.ElementType;
+}
