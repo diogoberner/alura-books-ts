@@ -44,9 +44,9 @@ const onlineEducationLinks = [
   },
 ];
 
-const OnlineEducation = () => {
+const OnlineEducation = ({ ...props }: React.HTMLAttributes<HTMLElement>) => {
   return (
-    <nav>
+    <nav {...props}>
       <FooterTitle>Educação Online</FooterTitle>
       <FooterMenu links={onlineEducationLinks} />
     </nav>

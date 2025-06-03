@@ -16,9 +16,9 @@ const educationLinks: IFooterLinks[] = [
   },
 ];
 
-const Education = () => {
+const Education = ({ ...props }: React.HTMLAttributes<HTMLElement>) => {
   return (
-    <nav>
+    <nav {...props}>
       <FooterTitle>Educação</FooterTitle>
       <FooterMenu links={educationLinks} />
     </nav>

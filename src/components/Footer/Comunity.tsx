@@ -45,9 +45,9 @@ const comunityLinks = [
   },
 ];
 
-const Comunity = () => {
+const Comunity = ({ ...props }: React.HTMLAttributes<HTMLElement>) => {
   return (
-    <nav>
+    <nav {...props}>
       <FooterTitle>Comunidade</FooterTitle>
       <FooterMenu links={comunityLinks} />
     </nav>

@@ -17,7 +17,7 @@ const VisitedTopics = () => {
       <h2 className="mb-5 text-light text-center text-white uppercase lg:mb-10">
         TÓPICOS VISITADOS RECENTEMENTE
       </h2>
-      <div className="flex flex-wrap gap-4 items-center justify-center">
+      <div className="flex flex-wrap gap-4 items-center justify-center xl:px-[20%]">
         {topics &&
           topics.map((topic, index) => (
             <Button key={index} size="topic">
