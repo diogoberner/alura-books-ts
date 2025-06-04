@@ -7,6 +7,8 @@ import Input from "./components/Input";
 import { MdOutlineEmail } from "react-icons/md";
 import VisitedTopics from "./components/VisitedTopics";
 import Footer from "./components/Footer";
+import Modal from "./components/Modal";
+import LoginForm from "./components/LoginForm";
 
 function App() {
   return (
@@ -39,6 +41,9 @@ function App() {
         </Input>
       </BannerSection>
       <Footer />
+      <Modal>
+        <LoginForm />
+      </Modal>
     </div>
   );
 }
