@@ -10,7 +10,7 @@ const LoginForm = () => {
           Login
         </h2>
         <label>
-          <span className="">E-mail</span>
+          <span className="text-dark-blue text-xs font-bold pl-5">E-mail</span>
           <Input
             type="email"
             variant="secondary"
@@ -18,7 +18,7 @@ const LoginForm = () => {
           />
         </label>
         <label>
-          <span>Senha</span>
+          <span className="text-dark-blue text-xs font-bold pl-5">Senha</span>
           <Input type="password" variant="secondary" placeholder="**********" />
         </label>
         <div>
