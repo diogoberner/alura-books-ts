@@ -17,13 +17,22 @@ const LoginForm = () => {
             placeholder="seuemail@email.com.br"
           />
         </label>
-        <label>
+        <label className="my-3">
           <span className="text-dark-blue text-xs font-bold pl-5">Senha</span>
           <Input type="password" variant="secondary" placeholder="**********" />
         </label>
-        <div>
-          <a href="/">Esqueci minha senha</a>
+        <div className="flex items-center justify-between">
+          <a href="/" className="text-dark-blue text-xs underline">
+            Esqueci minha senha
+          </a>
           <Button size="small">Fazer login</Button>
+        </div>
+        <div className="h-[1px] w-full bg-dark-blue my-6" />
+        <div className="flex items-center justify-between">
+          <a href="/" className="text-dark-blue text-xs font-bold">
+            Ainda não tem uma conta?
+          </a>
+          <Button size="small">Criar conta</Button>
         </div>
       </form>
     </div>
