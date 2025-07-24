@@ -12,7 +12,7 @@ import LoginForm from "./components/LoginForm";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <Header />
       <HeroSearch />
       <BooksSection>ÚLTIMOS LANÇAMENTOS</BooksSection>
